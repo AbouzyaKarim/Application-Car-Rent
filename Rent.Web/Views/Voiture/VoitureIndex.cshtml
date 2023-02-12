@@ -1,0 +1,45 @@
+﻿
+
+@model IEnumerable<Rent.Web.Models.VoitureDto>
+<div class="container p-4 border">
+    <div class="row pb-2">
+        <div class="col">
+            <h1 class="text-primary">Products List</h1>
+        </div>
+        <div class="col text-end pt-1">
+            <a asp-action="VoitureCreate" class="btn btn-outline-primary"><i class="fas fa-plus"> Create New Voiture</i></a>
+        </div>
+    </div>
+
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>Image</th>
+                <th>Voitre Marque</th>
+                <th>Category</th>
+                <th>Price By Day</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td><img height="100" width="115" src="@item.ImageURL" /></td>
+                    <td>@item.marque</td>
+                    <td>@item.CategoryName</td>
+                    <td >@item.PriceByDay MAD</td>
+                    <td>
+                        <a asp-action="VoitureEdit" class="btn btn-success" asp-route-voitureId="@item.VoitureId"><i class="fas fa-edit"></i></a>
+
+                        <a asp-action="VoitureDelete" class="btn btn-danger" asp-route-voitureId="@item.VoitureId"><i class="fas fa-trash"></i></a>
+                    </td>
+                    
+                </tr>
+            }
+           
+        </tbody>
+    </table>
+    <br />
+    <br />
+</div>
