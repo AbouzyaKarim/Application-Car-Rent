@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "e+YELncY8XWsLaw1xyCxBXIXAgdO5t5F4DF2oMUl4trOsJscwcKg417P8XOwdV3qrYFn7oSpCFnaEzmSvGxzqA==",
+  "dgSpecHash": "mPgU20VIdv6WrrdlDNWI/ORZIrTFeo5vXxsLAS6/F26B6wOGYFGEpkTWqeCgNdUK3SMsojJE6jwWYBDN+EJyNw==",
   "success": true,
   "projectFilePath": "C:\\Users\\user\\source\\repos\\Car-Rent-App\\Rent.Web\\Rent.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\bootstrap\\5.2.3\\bootstrap.5.2.3.nupkg.sha512",
     "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
   ],
   "logs": []
